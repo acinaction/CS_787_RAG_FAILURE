@@ -1,0 +1,55 @@
+{
+ "repo": "meta-llama/Llama-2-7b-chat-hf",
+ "revision": "f5db02db724555f92da89c216ac04704f23d4590",
+ "last_modified": "2024-04-17 08:40:48+00:00",
+ "files": {
+  "config.json": {
+   "git_blob_sha1": "54ca0443a890c461f0d7b05fa06ff7a3ed6e1edc",
+   "lfs_sha256": null,
+   "size": 614
+  },
+  "generation_config.json": {
+   "git_blob_sha1": "e0cf7ed0d308d91b704d3652d4c2632144035cdd",
+   "lfs_sha256": null,
+   "size": 188
+  },
+  "model-00001-of-00002.safetensors": {
+   "git_blob_sha1": "74d935730029116e89af429bb156aa6fe643b44b",
+   "lfs_sha256": "66dec18c9f1705b9387d62f8485f4e7d871ca388718786737ed3c72dbfaac9fb",
+   "size": 9976576152
+  },
+  "model-00002-of-00002.safetensors": {
+   "git_blob_sha1": "3b6e626c44e48785088f86a4949f21fa08479d2c",
+   "lfs_sha256": "0fd6895090da1b2ccffdb93964847709a3b31e6b69fe7dc5a480dce37c811b1d",
+   "size": 3500296424
+  },
+  "model.safetensors.index.json": {
+   "git_blob_sha1": "cbe75f3ff6fdfd5c5e084d6a4968e6d10ce0490d",
+   "lfs_sha256": null,
+   "size": 26788
+  },
+  "special_tokens_map.json": {
+   "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d",
+   "lfs_sha256": null,
+   "size": 414
+  },
+  "tokenizer.json": {
+   "git_blob_sha1": "a6e931b92caff4c79c5c56282f1e89569a0ae558",
+   "lfs_sha256": null,
+   "size": 1842767
+  },
+  "tokenizer.model": {
+   "git_blob_sha1": "6c00c742ce03c627d6cd5b795984876fa49fa899",
+   "lfs_sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+   "size": 499723
+  },
+  "tokenizer_config.json": {
+   "git_blob_sha1": "a0024735c8dd7afe47fe72792b2c4edaff63bd3b",
+   "lfs_sha256": null,
+   "size": 1618
+  }
+ },
+ "expected_prompt_prefix": "<s>[INST] <<SYS>>\nYou are a helpful assistant.\n<</SYS>>\n\n",
+ "expected_prompt_suffix": " [/INST]",
+ "note": "Fingerprints read from the Hugging Face API on 2026-11-07 (metadata is public; files are gated). The Kaggle gate cell recomputes git-blob SHA-1 / SHA-256 of the downloaded files and must match."
+}

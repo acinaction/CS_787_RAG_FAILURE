@@ -1,0 +1,44 @@
+{
+ "frozen_at": "2026-11-07T19:22:49",
+ "note": "Frozen before any full model generation. tests/test_frozen.py fails if any of these change.",
+ "files": {
+  "benchmark_v2.jsonl": "daca081415533feb1908d8f758eb43b48c022fed58d5061632613853aa9f2ac8",
+  "folds_v2.json": "42d51c6ea113e32c265ebcf5a5292eb939c9a23be9d9503cf01a7e84bf580f33",
+  "comparison_set_v2.json": "2e04b98ed3fc066fa8a91e950482de19b5ef88ff42664c77b363ffd848bed510",
+  "model_pin.json": "bbb5073feb6a17adcd1652e24b988935afd61c6b4f714503b6650dda9fe83be5",
+  "trunc_sample_uids.txt": "4e48a07aee5c9fffdd653878172f45195b6495e8b74b46b0b917102fb53e17ae",
+  "experiment_config_v2.json": "88e3945b100f32c4845c6bd4c5b59f7907665b392e51daf941d1d0c54dbdda10"
+ },
+ "prompt_v1_constants_sha256": "7ee17c79a74f5840f3695715dfa5b50953a74caf4931e390d43c3736df651606",
+ "comparison_set_v2": {
+  "seed": 1,
+  "qids": [
+   "56de4c324396321400ee27ab",
+   "5705f13d52bb8914006896f4",
+   "570d2417fed7b91900d45c41",
+   "57108c95b654c5140001f97a",
+   "5710e9f8a58dae1900cd6b34",
+   "57113c6da58dae1900cd6d35",
+   "571c3e8cdd7acb1400e4c0a9",
+   "572671a5f1498d1400e8dfe5",
+   "5726ea985951b619008f8263",
+   "5727aec03acd2414000de993",
+   "5727ed2e3acd2414000df002",
+   "57298ef11d0469140077952f",
+   "57299d1c1d04691400779584",
+   "572a10cd6aef051400155222",
+   "572f7588947a6a140053c987",
+   "572f7b33947a6a140053c9a4",
+   "572fdc34a23a5019007fca94",
+   "573010fab2c2fd14005687db",
+   "57303048947a6a140053d255",
+   "5737432bc3c5551400e51e9d"
+  ]
+ },
+ "kept_for_reference_not_used": {
+  "benchmark_v1.jsonl": "401d403e2cbc0cfe3bbd98510544b4dae76666c0109c4e88a88fb824ad677b0e",
+  "folds_v1.json": "e7ab7df42c8eabc3bb283871cf89996b2d0ae1bc1c2ff15d818566a002b45f38",
+  "comparison_set_v1.json": "d2ff86880539b15af39aa0b96f63fa9edfcf8065aaa1c7475ee3df11465dda27"
+ },
+ "config_added_on": "2026-11-07 (decisions: max_new_tokens 128 + selective 256 regeneration; Pearson |r| ranking with sign retained)"
+}

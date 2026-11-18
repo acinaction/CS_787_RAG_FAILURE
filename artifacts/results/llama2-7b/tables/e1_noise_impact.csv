@@ -1,0 +1,11 @@
+template,condition,n,accuracy,refusal_rate,failure_rate,followed_counterfactual
+std,C1_gold,150,0.893,0.0,0.107,
+std,C2_random,150,0.84,0.0,0.16,
+std,C3_hardneg,150,0.787,0.0,0.213,
+std,C4_missing,150,0.08,0.02,0.98,
+std,C5_counterfactual,150,0.673,0.0,0.327,0.253
+abstain,C1_gold,150,0.88,0.013,0.12,
+abstain,C2_random,150,0.82,0.007,0.18,
+abstain,C3_hardneg,150,0.793,0.0,0.207,
+abstain,C4_missing,150,0.073,0.147,0.853,
+abstain,C5_counterfactual,150,0.693,0.0,0.307,0.247

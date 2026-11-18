@@ -1,0 +1,13 @@
+side,condition,kept-correct,caught-failure,missed-failure,false-abstain
+orig,C1_gold,13,1,1,5
+orig,C2_random,13,1,2,4
+orig,C3_hardneg,11,1,4,4
+orig,C4_missing,0,6,14,0
+orig,C5_counterfactual,10,2,4,4
+orig,all,47,11,25,17
+ours,C1_gold,9,1,1,9
+ours,C2_random,11,2,1,6
+ours,C3_hardneg,9,3,2,6
+ours,C4_missing,0,12,8,0
+ours,C5_counterfactual,6,3,3,8
+ours,all,35,21,15,29

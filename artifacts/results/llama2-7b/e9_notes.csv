@@ -1,0 +1,21 @@
+﻿uid,what_happened,notes
+572fb059947a6a140053cb84__C5_counterfactual,Model answered from a look-alike passage that does not contain the answer,"The detector scores were relatively low despite the answer being wrong, so they missed the error."
+5730bd00069b5314008322da__C4_missing,Model answered from a look-alike passage that does not contain the answer,"The scores were relatively low despite the wrong answer, so the detectors missed this error."
+57300761947a6a140053cf9d__C2_random,Model answered from a look-alike passage that does not contain the answer,"The original and probe scores were low for a wrong answer, so they did not help here."
+572a03086aef0514001551a2__C2_random,Model answered correctly from the passages,"The scores were low, which correctly aligns with the model getting the answer right."
+57377083c3c5551400e51edf__C4_missing,Model answered from a look-alike passage that does not contain the answer,"The probe score was very high (0.953) for this wrong answer, so it successfully helped flag the error."
+570d30fdfed7b91900d45ce7__C3_hardneg,Model answered correctly from the passages,"The scores were relatively low, correctly agreeing with a right answer."
+5725f00938643c19005aceda__C1_gold,Model answered correctly from the passages,The low scores correctly indicated a high likelihood of the answer being right.
+57282dfb4b864d1900164668__C5_counterfactual,Model answered correctly from the passages,"The scores remained appropriately low, confirming the model correctly found the real answer and ignored the fake one."
+5726449f1125e71900ae192b__C4_missing,Model answered from a look-alike passage that does not contain the answer,"The probe score successfully spiked to 0.94 for this incorrect answer, showing that it helped."
+57284d484b864d1900164900__C3_hardneg,Model gave a correct-looking answer that does not match the gold wording,"The scores were low, which makes sense if the model's answer was conceptually plausible despite the strict string-matching failure."
+57108c95b654c5140001f97a__C3_hardneg,Model answered correctly from the passages,The low scores correctly indicated that the answer was right.
+572759dbdd62a815002e9b96__C4_missing,Model answered from a look-alike passage that does not contain the answer,The high probe score (0.848) successfully signaled that this answer was likely wrong.
+573383d0d058e614000b5c39__C4_missing,Model answered from a look-alike passage that does not contain the answer,"The probe score spiked perfectly to 1, strongly and correctly flagging the error."
+571c8539dd7acb1400e4c0e6__C3_hardneg,Model answered correctly from the passages,"The scores were low, correctly reflecting that the model got the answer right."
+572f7588947a6a140053c987__C5_counterfactual,Model answered correctly from the passages,"Our score (0.078) remained appropriately low, helping to confirm the model was right despite the counterfactual condition."
+572a07a86aef0514001551d6__C4_missing,Model answered from a look-alike passage that does not contain the answer,"The probe score (0.666) and our score (0.401) were elevated, helping to flag that the model extracted incorrect information."
+5727ed2e3acd2414000df002__C4_missing,Model answered from a look-alike passage that does not contain the answer,"The probe score of 0.669 helped catch this incorrect, hallucinated answer."
+572657d9dd62a815002e8232__C4_missing,Model answered from a look-alike passage that does not contain the answer,"The probe score was extremely high (0.999), strongly and accurately flagging this hallucinated answer."
+573383d0d058e614000b5c39__C4_missing,Model answered from a look-alike passage that does not contain the answer,"The probe score reached 1, correctly indicating a high likelihood that the answer was wrong."
+56e1febfe3433e140042323a__C4_missing,Model answered from a look-alike passage that does not contain the answer,"The probe score was very high (0.923), which successfully helped flag this incorrect answer, while the other two scores stayed low and missed the error."

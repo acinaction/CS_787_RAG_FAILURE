@@ -1,0 +1,122 @@
+[
+ {
+  "detector": "s_lr_ecspks",
+  "fold": 0,
+  "option": "ecs+pks",
+  "hp": 0.01,
+  "inner_auc": 0.6573648462039988,
+  "tau": 0.2793920486619839
+ },
+ {
+  "detector": "s_lr_ecspks",
+  "fold": 1,
+  "option": "ecs+pks",
+  "hp": 0.01,
+  "inner_auc": 0.7079058552036163,
+  "tau": 0.33579435458104295
+ },
+ {
+  "detector": "s_lr_ecspks",
+  "fold": 2,
+  "option": "ecs+pks",
+  "hp": 0.01,
+  "inner_auc": 0.6681511477011636,
+  "tau": 0.28225883909613364
+ },
+ {
+  "detector": "s_lr_ecspks",
+  "fold": 3,
+  "option": "ecs+pks",
+  "hp": 0.01,
+  "inner_auc": 0.6846781852545044,
+  "tau": 0.3011877183383363
+ },
+ {
+  "detector": "s_lr_ecspks",
+  "fold": 4,
+  "option": "ecs+pks",
+  "hp": 0.1,
+  "inner_auc": 0.7119321235418861,
+  "tau": 0.19501239150796498
+ },
+ {
+  "detector": "s_lr_ecspks_bm25",
+  "fold": 0,
+  "option": "ecs+pks+bm25",
+  "hp": 0.01,
+  "inner_auc": 0.7194259025935489,
+  "tau": 0.30203353231778807
+ },
+ {
+  "detector": "s_lr_ecspks_bm25",
+  "fold": 1,
+  "option": "ecs+pks+bm25",
+  "hp": 0.01,
+  "inner_auc": 0.755774197565319,
+  "tau": 0.33709757651989913
+ },
+ {
+  "detector": "s_lr_ecspks_bm25",
+  "fold": 2,
+  "option": "ecs+pks+bm25",
+  "hp": 0.01,
+  "inner_auc": 0.7430075905810581,
+  "tau": 0.3138850410311276
+ },
+ {
+  "detector": "s_lr_ecspks_bm25",
+  "fold": 3,
+  "option": "ecs+pks+bm25",
+  "hp": 0.01,
+  "inner_auc": 0.7372019044155239,
+  "tau": 0.3143550762915855
+ },
+ {
+  "detector": "s_lr_ecspks_bm25",
+  "fold": 4,
+  "option": "ecs+pks+bm25",
+  "hp": 0.01,
+  "inner_auc": 0.756859635521284,
+  "tau": 0.2976991859268356
+ },
+ {
+  "detector": "s_mlp_ecspks",
+  "fold": 0,
+  "option": "ecs+pks",
+  "hp": 1.0,
+  "inner_auc": 0.6555778119065357,
+  "tau": 0.041085084283760856
+ },
+ {
+  "detector": "s_mlp_ecspks",
+  "fold": 1,
+  "option": "ecs+pks",
+  "hp": 1.0,
+  "inner_auc": 0.6926375679239927,
+  "tau": 0.04657879467136671
+ },
+ {
+  "detector": "s_mlp_ecspks",
+  "fold": 2,
+  "option": "ecs+pks",
+  "hp": 0.1,
+  "inner_auc": 0.6402854927696535,
+  "tau": 0.006419212558879087
+ },
+ {
+  "detector": "s_mlp_ecspks",
+  "fold": 3,
+  "option": "ecs+pks",
+  "hp": 1.0,
+  "inner_auc": 0.6808983029669259,
+  "tau": 0.07804207263589791
+ },
+ {
+  "detector": "s_mlp_ecspks",
+  "fold": 4,
+  "option": "ecs+pks",
+  "hp": 0.01,
+  "inner_auc": 0.6880905882300862,
+  "tau": 0.00047739874484973525
+ }
+]

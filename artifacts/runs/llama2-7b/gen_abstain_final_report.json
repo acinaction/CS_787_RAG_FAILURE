@@ -1,0 +1,29 @@
+{
+ "template": "abstain",
+ "rows": 750,
+ "still_truncated": 0,
+ "still_truncated_uids": [],
+ "empty_answers": 0,
+ "empty_rate": 0.0,
+ "regenerated_rows": 1,
+ "answer_tokens": {
+  "median": 29,
+  "p99": 155,
+  "max": 309
+ },
+ "errors": [],
+ "first_limit": 128,
+ "regen_limit": 256,
+ "truncated_after_first_pass": 12,
+ "truncated_after_tier2": 1,
+ "regen2_limit": 512,
+ "merge_stats": {
+  "prefix_match": 12,
+  "now_complete": 11,
+  "still_truncated_at_regen_limit": 1,
+  "tier3": {
+   "prefix_match": 1,
+   "now_complete": 1
+  }
+ }
+}

@@ -1,0 +1,9 @@
+detector,train_on,test_on,n_fail,auroc,pooled_ref(s_redeep),pooled_ref(s_probe_best)
+x_redeep_trC2,C2,C1_gold,16,"0.506 [0.328, 0.687]","0.508 [0.312, 0.689]",
+x_redeep_trC2,C2,C3_hardneg,32,"0.551 [0.442, 0.670]","0.486 [0.373, 0.612]",
+x_redeep_trC2,C2,C4_missing,147,n/a,n/a,
+x_redeep_trC2,C2,C5_counterfactual,49,"0.518 [0.422, 0.625]","0.456 [0.359, 0.554]",
+x_probe_trC2,C2,C1_gold,16,"0.591 [0.447, 0.720]",,"0.642 [0.497, 0.767]"
+x_probe_trC2,C2,C3_hardneg,32,"0.520 [0.409, 0.631]",,"0.512 [0.410, 0.609]"
+x_probe_trC2,C2,C4_missing,147,n/a,,n/a
+x_probe_trC2,C2,C5_counterfactual,49,"0.578 [0.477, 0.671]",,"0.477 [0.380, 0.576]"

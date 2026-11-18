@@ -1,0 +1,39 @@
+{
+  "experiment": "E0 reproduction, ReDeEP(chunk), Llama-2-7B-chat, RAGTruth test split, CPU",
+  "repo_commit": "4d08191",
+  "hyperparameters_used_by_script": {
+    "top_heads": 3,
+    "top_layers": 4,
+    "beta": 0.6,
+    "m": 1
+  },
+  "n_responses": 450,
+  "n_chunks": 1159,
+  "paper": {
+    "ReDeEP(token)": {
+      "auc": 0.7325,
+      "pcc": 0.3979
+    },
+    "ReDeEP(chunk)": {
+      "auc": 0.7458,
+      "pcc": 0.4203
+    }
+  },
+  "authors_shipped_result": {
+    "auc": 0.7472542667509481,
+    "pcc": 0.42072074189229686
+  },
+  "ours_rank_on_first_half_rows": {
+    "auc": 0.7472542667509481,
+    "pcc": 0.4207207418922968
+  },
+  "ours_rank_on_all_rows": {
+    "auc": 0.7472542667509481,
+    "pcc": 0.4207207418922968
+  },
+  "shims": [
+    "stub source_info.jsonl (task_type unused by metrics)",
+    "fixed column-slice bug: df.iloc[:, :int(df.shape[1] * 0.5)] -> df.iloc[:int(df.shape[0] * 0.5)]"
+  ],
+  "note": "Token-level features are not shipped, so ReDeEP(token) cannot be reproduced on CPU; paper value reported for reference."
+}

@@ -1,0 +1,21 @@
+n,uid,condition,reviewer_mark,reviewer_note,matches_designed_property,final_mark,final_note
+1,571095a8a58dae1900cd6a78__C1_gold,C1_gold,OK,,False,OK,
+2,57113c6da58dae1900cd6d35__C1_gold,C1_gold,OK,,False,OK,
+3,570d3468b3d812140066d547__C1_gold,C1_gold,OK,,False,OK,
+4,572881022ca10214002da416__C1_gold,C1_gold,OK,,False,OK,
+5,571095a8a58dae1900cd6a78__C2_random,C2_random,OK,,False,OK,
+6,57113c6da58dae1900cd6d35__C2_random,C2_random,OK,,False,OK,
+7,570d3468b3d812140066d547__C2_random,C2_random,OK,,False,OK,
+8,572881022ca10214002da416__C2_random,C2_random,OK,,False,OK,
+9,571095a8a58dae1900cd6a78__C3_hardneg,C3_hardneg,OK,,False,OK,
+10,57113c6da58dae1900cd6d35__C3_hardneg,C3_hardneg,OK,,False,OK,
+11,570d3468b3d812140066d547__C3_hardneg,C3_hardneg,OK,,False,OK,
+12,572881022ca10214002da416__C3_hardneg,C3_hardneg,OK,,False,OK,
+13,571095a8a58dae1900cd6a78__C4_missing,C4_missing,Problem,gold answer missing from all passages (France Antarctique),True,OK,"confirmed by owner 2026-11-10: flag described the designed property of the condition, not a defect"
+14,57113c6da58dae1900cd6d35__C4_missing,C4_missing,Problem,gold answer missing (Giovanni Branca),True,OK,"confirmed by owner 2026-11-10: flag described the designed property of the condition, not a defect"
+15,570d3468b3d812140066d547__C4_missing,C4_missing,Problem,"gold answer and location missing (Ford, Broadmeadows)",True,OK,"confirmed by owner 2026-11-10: flag described the designed property of the condition, not a defect"
+16,572881022ca10214002da416__C4_missing,C4_missing,Problem,"gold answer missing (non-Mongol physicians, otachi)",True,OK,"confirmed by owner 2026-11-10: flag described the designed property of the condition, not a defect"
+17,571095a8a58dae1900cd6a78__C5_counterfactual,C5_counterfactual,Problem,"counterfactual conflict: P1 real answer, P2 fake (Charleston, South Carolina)",True,OK,"confirmed by owner 2026-11-10: flag described the designed property of the condition, not a defect"
+18,57113c6da58dae1900cd6d35__C5_counterfactual,C5_counterfactual,Problem,"counterfactual conflict: P2 real, P1 fake (Matthew Murray)",True,OK,"confirmed by owner 2026-11-10: flag described the designed property of the condition, not a defect"
+19,570d3468b3d812140066d547__C5_counterfactual,C5_counterfactual,Problem,"counterfactual conflict: P2 real, P1 fake (Mount Bogong)",True,OK,"confirmed by owner 2026-11-10: flag described the designed property of the condition, not a defect"
+20,572881022ca10214002da416__C5_counterfactual,C5_counterfactual,Problem,"counterfactual conflict: P1 real, P2 fake (various allied groups)",True,OK,"confirmed by owner 2026-11-10: flag described the designed property of the condition, not a defect"

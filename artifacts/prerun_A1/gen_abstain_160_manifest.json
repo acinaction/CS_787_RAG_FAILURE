@@ -1,0 +1,14 @@
+{
+ "model": "meta-llama/Llama-2-7b-chat-hf",
+ "revision": "f5db02db724555f92da89c216ac04704f23d4590",
+ "template": "abstain",
+ "prompt_version": "prompt_v1",
+ "bench": "artifacts/data/benchmark_v2.jsonl",
+ "decoding": "greedy",
+ "do_sample": false,
+ "max_new_tokens": 160,
+ "dtype": "torch.float16",
+ "eos_token_id": 2,
+ "transformers": "5.20.2",
+ "torch": "2.11.0+cu130"
+}

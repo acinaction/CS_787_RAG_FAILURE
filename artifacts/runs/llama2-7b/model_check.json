@@ -1,0 +1,58 @@
+{
+ "repo": "meta-llama/Llama-2-7b-chat-hf",
+ "revision": "f5db02db724555f92da89c216ac04704f23d4590",
+ "files": {
+  "config.json": {
+   "match": true,
+   "got": "54ca0443a890c461f0d7b05fa06ff7a3ed6e1edc"
+  },
+  "generation_config.json": {
+   "match": true,
+   "got": "e0cf7ed0d308d91b704d3652d4c2632144035cdd"
+  },
+  "model.safetensors.index.json": {
+   "match": true,
+   "got": "cbe75f3ff6fdfd5c5e084d6a4968e6d10ce0490d"
+  },
+  "special_tokens_map.json": {
+   "match": true,
+   "got": "451134b2ddc2e78555d1e857518c54b4bdc2e87d"
+  },
+  "tokenizer.json": {
+   "match": true,
+   "got": "a6e931b92caff4c79c5c56282f1e89569a0ae558"
+  },
+  "tokenizer.model": {
+   "match": true,
+   "got": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
+  },
+  "tokenizer_config.json": {
+   "match": true,
+   "got": "a0024735c8dd7afe47fe72792b2c4edaff63bd3b"
+  }
+ },
+ "chat_template_sha256": "e8d5b5a546d3f19df16a5320c614fab05bdc4edd50e850f1afd947b503ea41cf",
+ "has_chat_template": true,
+ "render_std": {
+  "prefix": true,
+  "suffix": true,
+  "system": true,
+  "instruction": true,
+  "question": true,
+  "single_bos": true,
+  "n_tokens": 228,
+  "rendered_head": "<s>[INST] <<SYS>>\nYou are a helpful assistant.\n<</SYS>>\n\nAnswer the question using the passages below. Give a short answer (a few words only).\n\nPassage 1: Devel"
+ },
+ "render_abstain": {
+  "prefix": true,
+  "suffix": true,
+  "system": true,
+  "instruction": true,
+  "question": true,
+  "single_bos": true,
+  "n_tokens": 247,
+  "rendered_head": "<s>[INST] <<SYS>>\nYou are a helpful assistant.\n<</SYS>>\n\nAnswer the question using the passages below. Give a short answer (a few words only). If the passages d"
+ },
+ "prompt_version": "prompt_v1",
+ "all_ok": true
+}

@@ -1,0 +1,92 @@
+{
+ "rows": 750,
+ "qids": 150,
+ "dropped": [
+  [
+   "57377c98c3c5551400e51efd",
+   "counterfactual swap failed",
+   {
+    "question": "What value does the seperating into fermions and bosons depend?",
+    "gold_answers": [
+     "spin",
+     "the spin",
+     "the value of the spin",
+     "value of the spin",
+     "value of the spin,"
+    ],
+    "replacement": "magnitude",
+    "why": "gold string 'spin' still present after word-boundary swap (it occurs inside a longer word/phrase)",
+    "context_after_swap": "ectrons) have a symmetric magnitude function (e.g. parallel spins) the spatial variables must be antisymmetric (i.e. they ex"
+   }
+  ],
+  [
+   "573750f61c45671900574468",
+   "counterfactual swap failed",
+   {
+    "question": "What kind of measurements define accelerlations?",
+    "gold_answers": [
+     "kinematic",
+     "kinematic measurements"
+    ],
+    "replacement": "Schr\u00f6dinger equation",
+    "why": "gold string 'kinematic' still present after word-boundary swap (it occurs inside a longer word/phrase)",
+    "context_after_swap": "can be defined through Schr\u00f6dinger equation. However, while kinematics are well-described through reference frame analysis in adv"
+   }
+  ],
+  [
+   "57096f37200fba1400367fe7",
+   "counterfactual swap failed",
+   {
+    "question": "Can BSkyB veto the presence of channels on their EPG?",
+    "gold_answers": [
+     "Third-party channels",
+     "no"
+    ],
+    "replacement": "Video On Demand content",
+    "why": "gold string 'no' still present after word-boundary swap (it occurs inside a longer word/phrase)",
+    "context_after_swap": "t for being carried. However, even in this case, BSkyB does not carry any control over the channel's content or carriage i"
+   }
+  ],
+  [
+   "5728fc9e1d04691400778f12",
+   "counterfactual swap failed",
+   {
+    "question": "When the law is a direct target of the protest, what is this called?",
+    "gold_answers": [
+     "direct civil disobedience"
+    ],
+    "replacement": "solidarity",
+    "why": "gold string 'direct civil disobedience' still present after word-boundary swap (it occurs inside a longer word/phrase)",
+    "context_after_swap": "e distinguished between two types of civil disobedience: \"Indirect civil disobedience involves violating a law which is not, itself, the object o"
+   }
+  ],
+  [
+   "5729feaf6aef05140015518c",
+   "counterfactual swap failed",
+   {
+    "question": "What percentage of the land cleared in the Amazon is used for growing livestock?",
+    "gold_answers": [
+     "91",
+     "91%"
+    ],
+    "replacement": "over half",
+    "why": "gold string '91' still present after word-boundary swap (it occurs inside a longer word/phrase)",
+    "context_after_swap": "Between 1991 and 2000, the total area of forest lost in the Amazon rose "
+   }
+  ],
+  [
+   "571c7d55dd7acb1400e4c0c6",
+   "counterfactual swap failed",
+   {
+    "question": "What was Dalton's erroneous formula for water?",
+    "gold_answers": [
+     "HO"
+    ],
+    "replacement": "Pictet",
+    "why": "gold string 'HO' still present after word-boundary swap (it occurs inside a longer word/phrase)",
+    "context_after_swap": "n 1805, Joseph Louis Gay-Lussac and Alexander von Humboldt showed that water is formed of two volumes of hydrogen and one "
+   }
+  ]
+ ],
+ "errors": []
+}

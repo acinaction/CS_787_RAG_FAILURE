@@ -1,0 +1,21 @@
+prompt,LLM_failed_in,orig_ReDeEP_right,ours_ReDeEP_right,probe_mean_score,LLM_failed_conditions
+What kind of needlework was used in the creation of the Bayeux Tapestr,1/5 conditions,4,1,0.225,C4
+How many counties initially made up the definition of southern Califor,5/5 conditions,0,0,0.326,"C1, C2, C3, C4, C5"
+What is the largest stadium in Australia?,1/5 conditions,4,1,0.136,C4
+What town in upstate New York was settled by Huguenots?,2/5 conditions,3,3,0.174,"C4, C5"
+When was the colony destroyed?,1/5 conditions,1,2,0.502,C4
+Who described a steam turbine in 1629?,1/5 conditions,1,5,0.16,C4
+"Besides combustion, for what other action did Mayow show nitroaereus r",1/5 conditions,4,4,0.669,C4
+Stretched rocks that pinch into lenses are known by what word? ,2/5 conditions,4,2,0.199,"C4, C5"
+What are some large pharmacy management companies?,3/5 conditions,2,3,0.169,"C3, C4, C5"
+What river is located in the vicinity of the school?,2/5 conditions,3,1,0.439,"C3, C4"
+When there are many workers competing for a few jobs its considered as,1/5 conditions,4,2,0.407,C4
+What does the Riemann hypothesis state the source of irregularity in t,1/5 conditions,1,4,0.38,C4
+What do a and b represent in a Gaussian integer expression? ,3/5 conditions,3,3,0.456,"C2, C3, C4"
+At what size and larger can drugs elicit a neutralizing immune respons,1/5 conditions,4,5,0.454,C4
+What is the largest suspension bridge in Germany?,1/5 conditions,4,3,0.26,C4
+What does the Nederrikn's name change into?,2/5 conditions,2,3,0.264,"C4, C5"
+What was the seat of former party leader David McLetchie?,1/5 conditions,4,1,0.168,C4
+Who masterminded many terror attacks?,1/5 conditions,4,4,0.178,C4
+What department in the U.S. spearheaded the efforts against Islamism? ,1/5 conditions,4,4,0.207,C4
+"What are the laws of physics of Galileo, in reference to objest in mot",5/5 conditions,2,5,0.286,"C1, C2, C3, C4, C5"

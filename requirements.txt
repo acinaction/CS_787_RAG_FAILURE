@@ -1,0 +1,12 @@
+torch
+transformers>=4.56
+accelerate
+numpy
+pandas
+pyarrow
+scikit-learn
+rank_bm25
+matplotlib
+tabulate
+datasets
+pytest

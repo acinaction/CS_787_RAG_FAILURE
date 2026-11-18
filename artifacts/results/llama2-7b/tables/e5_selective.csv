@@ -1,0 +1,23 @@
+detector,name,AURC,coverage_at_tau,risk_at_tau
+s_redeep_c1,ReDeEP original (C1-fit),0.3277,0.771,0.334
+s_redeep,ReDeEP noise-aware (pooled),0.3538,0.409,0.349
+s_redeep_c1_aucrank,"ReDeEP original, AUROC ranking (sensitivity)",0.3442,0.919,0.351
+s_redeep_aucrank,"ReDeEP noise-aware, AUROC ranking (sensitivity)",0.2796,0.284,0.211
+s_redeep_o1,ReDeEP published hparams (O1),0.2777,1.0,0.357
+s_ecs,ECS only,0.3471,0.08,0.25
+s_pks,PKS only,0.3237,0.132,0.222
+s_lr_ecspks,LR(ECS+PKS),0.2378,0.323,0.207
+s_lr_ecspks_bm25,LR(ECS+PKS+BM25),0.2,0.384,0.174
+s_mlp_ecspks,MLP(ECS+PKS),0.2397,0.221,0.199
+s_probe_L1,Probe L1,0.1804,0.637,0.195
+s_probe_L2,Probe L2,0.1726,0.64,0.217
+s_probe_L3,Probe L3,0.1736,0.601,0.215
+s_probe_best,Probe (best),0.185,0.617,0.205
+s_perplexity,Perplexity,0.2417,0.383,0.237
+s_lnentropy,LN-entropy,0.2353,0.343,0.198
+s_firsttok_entropy,First-token entropy,0.2277,0.307,0.174
+s_bm25_margin,BM25 margin,0.2119,0.465,0.146
+s_cond_prior,Condition prior (not deployable),0.1788,0.76,0.204
+oracle,Oracle (perfect ranking),0.0734,,
+none,No abstention (answer all),0.3573,1.0,0.357
+prompt_abstain,Prompt-based abstention (single point),,0.967,0.341

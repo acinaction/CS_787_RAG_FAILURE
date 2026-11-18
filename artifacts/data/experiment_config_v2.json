@@ -1,0 +1,24 @@
+{
+  "frozen_on": "2026-11-07",
+  "note": "Decisions approved by the project owner. Defaults in src/gen/gen.py, src/gen/finalize_gen.py and src/detect/fit_redeep.py must equal these values (tests/test_frozen.py checks it). Change only with a version bump + DEVIATIONS.md entry.",
+  "model": "meta-llama/Llama-2-7b-chat-hf",
+  "revision": "f5db02db724555f92da89c216ac04704f23d4590",
+  "prompt_version": "prompt_v1",
+  "benchmark": "benchmark_v2.jsonl",
+  "decoding": {"do_sample": false, "dtype": "float16"},
+  "generation": {
+    "max_new_tokens": 128,
+    "regenerate_truncated_with_max_new_tokens": 256,
+    "second_regeneration_max_new_tokens": 512,
+    "second_regeneration_note": "added 2026-11-08 (DEVIATIONS 4b): rows still without EOS at 256 are regenerated alone at 512; 0 may remain truncated after that",
+    "regenerate_only_rows_without_eos_within_limit": true,
+    "max_truncated_rows_allowed_after_regeneration": 0
+  },
+  "head_layer_selection": {
+    "primary": "pearson",
+    "primary_definition": "signed Pearson r(feature, failure); candidates ranked by |r| descending; original sign retained and used in scoring (oriented features, score = PKS_oriented_norm + beta * ECS_oriented_norm)",
+    "sensitivity_only": "auroc",
+    "sensitivity_definition": "authors' AUROC ranking with the paper's fixed directions (columns *_aucrank)"
+  },
+  "evaluation": {"outer_folds": 5, "inner_folds": 3, "bootstrap": 1000, "min_class_for_auroc": 10}
+}

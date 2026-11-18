@@ -1,0 +1,7 @@
+condition,n,failure_rate,s_redeep_c1_auroc,s_redeep_c1_caught-failure,s_redeep_c1_missed-failure,s_redeep_c1_false-abstain,s_redeep_c1_kept-correct,s_redeep_auroc,s_redeep_caught-failure,s_redeep_missed-failure,s_redeep_false-abstain,s_redeep_kept-correct,s_probe_best_auroc,s_probe_best_caught-failure,s_probe_best_missed-failure,s_probe_best_false-abstain,s_probe_best_kept-correct,delta_auroc_ours_minus_orig
+C1_gold,150,0.107,"0.544 [0.414, 0.671]",6,10,31,103,"0.508 [0.312, 0.689]",11,5,76,58,"0.642 [0.497, 0.767]",1,15,8,126,"-0.035 [-0.260, +0.162]"
+C2_random,150,0.16,"0.506 [0.400, 0.614]",7,17,24,102,"0.497 [0.366, 0.626]",10,14,65,61,"0.596 [0.459, 0.721]",8,16,21,105,"-0.009 [-0.153, +0.130]"
+C3_hardneg,150,0.213,"0.509 [0.402, 0.608]",11,21,20,98,"0.486 [0.373, 0.612]",14,18,69,49,"0.512 [0.410, 0.609]",9,23,36,82,"-0.023 [-0.170, +0.116]"
+C4_missing,150,0.98,n/a,33,114,1,2,n/a,96,51,3,0,n/a,137,10,3,0,n/a
+C5_counterfactual,150,0.327,"0.472 [0.383, 0.568]",18,31,21,80,"0.456 [0.359, 0.554]",30,19,69,32,"0.477 [0.380, 0.576]",18,31,46,55,"-0.016 [-0.135, +0.097]"
+all,750,0.357,"0.506 [0.466, 0.547]",75,193,97,385,"0.514 [0.468, 0.565]",161,107,282,200,"0.771 [0.733, 0.808]",173,95,114,368,"+0.008 [-0.055, +0.066]"

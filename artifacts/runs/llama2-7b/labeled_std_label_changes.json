@@ -1,0 +1,33 @@
+{
+ "C1_gold": {
+  "n": 150,
+  "correct_changed": 0,
+  "failure_changed": 0,
+  "mean_f1": 0.4654
+ },
+ "C2_random": {
+  "n": 150,
+  "correct_changed": 0,
+  "failure_changed": 0,
+  "mean_f1": 0.2323
+ },
+ "C3_hardneg": {
+  "n": 150,
+  "correct_changed": 0,
+  "failure_changed": 0,
+  "mean_f1": 0.2177
+ },
+ "C4_missing": {
+  "n": 150,
+  "correct_changed": 0,
+  "failure_changed": 0,
+  "mean_f1": 0.0621
+ },
+ "C5_counterfactual": {
+  "n": 150,
+  "correct_changed": 0,
+  "failure_changed": 0,
+  "mean_f1": 0.2364
+ },
+ "examples": []
+}
