@@ -1,20 +1,3 @@
-"""P1: resumable greedy generation. One JSON line per uid, appended as it finishes.
-Run from repo root (Kaggle):
-  python -m src.gen.gen --model meta-llama/Llama-2-7b-chat-hf \
-      --bench artifacts/data/benchmark_mini_v0.jsonl \
-      --template std --out artifacts/runs/llama2-7b/gen_std.jsonl --n 20
-
-Fallback smoke-test (no HF access needed):
-  python -m src.gen.gen --model TinyLlama/TinyLlama-1.1B-Chat-v1.0 \
-      --bench tiny_bench.jsonl --template std \
-      --out artifacts/runs/tiny/gen_std.jsonl --n 10
-
-Design notes:
-- Appends one record per uid; never overwrites existing records.
-- Checkpoints every --checkpoint_every rows (default 50) by flushing to disk.
-- Resumes after Kaggle disconnection: skips uids already in the output file.
-- output_scores=True captures per-step logits for entropy/logprob computation.
-"""
 import argparse, json, os, time
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM

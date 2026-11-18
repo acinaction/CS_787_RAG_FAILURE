@@ -1,4 +1,3 @@
-"""Frozen prompt_v1. Do NOT edit without bumping PROMPT_VERSION and telling the team."""
 PROMPT_VERSION = "prompt_v1"
 SYSTEM = "You are a helpful assistant."
 STD = "Answer the question using the passages below. Give a short answer (a few words only)."

@@ -9,7 +9,7 @@
 |---|---|
 | **Project report (PDF, 9 pages)** | [`CS787_Project_Report.pdf`](CS787_Project_Report.pdf) |
 | **Detailed results report (Markdown, with appendices)** | [`REPORT.md`](REPORT.md) |
-| **Presentation slides (PPTX)** | [`presentation/Knowing_When_Not_to_Answer.pptx`](presentation/Knowing_When_Not_to_Answer.pptx) |
+| **Presentation slides (PPTX)** | [`presentation/Project_Presentation_Final.pptx`](presentation/Project_Presentation_Final.pptx) |
 | **Video presentation (Google Drive)** | https://drive.google.com/file/d/1AtW8b7WiF4AgIZwVRnCGGNL69KE_1wB7/view?usp=sharing |
 | Plan followed | [`FINAL_PLAN_V3.md`](FINAL_PLAN_V3.md) · changes from the plan: [`DEVIATIONS.md`](DEVIATIONS.md) |
 
