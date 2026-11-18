@@ -25,6 +25,16 @@
 - Probes and simple uncertainty baselines do better in places; pooled metrics mostly reward recognising missing evidence (the condition label alone reaches AUROC 0.82).
 - Reproduction of the paper on its released data: AUC 0.7473 / PCC 0.4207 vs 0.7458 / 0.4203.
 
+## Demo (no GPU needed)
+`python demo.py` replays the saved results for one question: the passages in each of the 5 conditions, Llama-2's answer with the standard prompt and with the abstain-allowed prompt, whether it was right, and what each detector (ReDeEP original / noise-aware, probe, LN-entropy) decided (answer or abstain).
+```bash
+python demo.py                      # the Amazon-drought example, all 5 conditions
+python demo.py --list               # the 20 comparison questions
+python demo.py --pick 3             # question 3 from that list
+python demo.py --pick 3 --cond C4_missing
+```
+It does not call the model live: generation needs a GPU and the gated Llama-2 weights (see the Kaggle notebooks).
+
 ## Repository layout
 ```
 src/data/        benchmark builder (noise_builder.py), prompts, labelling (evaluator.py), hand-check tools
