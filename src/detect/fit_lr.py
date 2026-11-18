@@ -1,10 +1,3 @@
-"""P3: learned combiners on ReDeEP features (pooled training; condition label is NEVER a feature).
-  s_lr_ecspks        logistic regression on [ecs_mean (all copy heads), pks_mean (all layers)]
-  s_lr_ecspks_bm25   + retriever features [bm25_margin, bm25_top1]
-  s_mlp_ecspks       small MLP (32 hidden) on the ECS+PKS vector
-Usage:
-  python -m src.detect.fit_lr --feats ... --labels ... --bench ... --folds ... --scores ... [--no_mlp]
-"""
 import argparse, json, os
 import numpy as np
 import pandas as pd

@@ -1,20 +1,3 @@
-"""Finish a generation file: selective long regeneration of truncated rows, merge, validate.
-
-Decision (2026-11-07, artifacts/data/experiment_config_v2.json): generate everything with max_new_tokens=128;
-rows whose answer did NOT end with EOS within 128 tokens are regenerated with max_new_tokens=256 (only those rows);
-rows still without EOS at 256 are regenerated alone at 512 (tier 3, added 2026-11-08 after 1/1500 rows hit 256);
-the merged file is validated before anything downstream (extraction, labels) may use it.
-
-  python -m src.gen.finalize_gen --model meta-llama/Llama-2-7b-chat-hf --bench artifacts/data/benchmark_v2.jsonl \
-        --template std --run artifacts/runs/llama2-7b
-  input : <run>/gen_<template>_128.jsonl          (from src.gen.gen --max_new_tokens 128)
-  output: <run>/gen_<template>_regen256.jsonl     (only the regenerated rows)
-          <run>/gen_<template>.jsonl              (FINAL merged file = the file every later stage reads)
-          <run>/gen_<template>_final_report.json  (validation report)
-Greedy decoding is prefix-deterministic, so a regenerated answer must start with the original 128 tokens; any
-mismatch (GPU numerics) is counted and reported, and the 256-token version is kept (it is the longer, complete run).
-Exit code 1 if validation fails (wrong uid set, duplicates, missing fields, rows still truncated at 256 above the allowed number).
-"""
 import argparse, json, os, subprocess, sys
 from collections import Counter
 

@@ -1,16 +1,3 @@
-"""Pre-run gate (run on Kaggle, needs HF access): is the model we will load EXACTLY the pinned Meta release,
-and does prompt_v1 render through its chat template as expected?
-
-  python -m src.gen.model_check --bench artifacts/data/benchmark_v2.jsonl --out artifacts/runs/llama2-7b/model_check.json [--hash_weights]
-
-Checks (all must pass, exit code 1 otherwise):
-  1 every small file (config, generation_config, tokenizer*, special_tokens_map, index) at the pinned revision has
-    the git-blob SHA-1 recorded in artifacts/data/model_pin.json; tokenizer.model also by SHA-256
-  2 (--hash_weights) both safetensors shards match the recorded LFS SHA-256 (~1-2 min on Kaggle)
-  3 the tokenizer has a chat template; its SHA-256 is recorded
-  4 one std and one abstain prompt render with the expected Llama-2 prefix/suffix, contain the system message,
-    instruction text and question verbatim, and start with exactly one BOS token
-"""
 import argparse, hashlib, json, os, sys
 from src.data.prompt_templates import build_messages, encode_prompt, STD, ABSTAIN_EXTRA, SYSTEM, PROMPT_VERSION
 

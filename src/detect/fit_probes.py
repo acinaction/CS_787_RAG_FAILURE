@@ -1,9 +1,3 @@
-"""P3: pre-generation probes — standardised logistic regression on the last-prompt-token hidden state.
-  s_probe_L1/L2/L3  one probe per layer (floor(L/3), floor(L/2), floor(3L/4)); C chosen by inner CV
-  s_probe_best      per outer fold, the layer AND C are chosen by inner CV (never by test AUROC)
-Usage:
-  python -m src.detect.fit_probes --probe_feats ... --probe_index ... --labels ... --folds ... --scores ...
-"""
 import argparse, json, os
 import numpy as np
 import pandas as pd

@@ -1,31 +1,3 @@
-"""P3: ReDeEP(token) detectors — original (C1-fit), noise-aware (pooled), ECS-only, PKS-only, O1.
-
-Procedure = the authors' `ReDeEP/token_level_reg.py`, wrapped in nested grouped CV:
-  1. token-level table: one row per answer token, features ECS[heads] and PKS[layers],
-     label = the row's failure (our labels are response-level).
-  2. rank copy heads and layers on TRAINING tokens. PRIMARY (FINAL_PLAN_V3 sec. 6, decision 2026-11-07): signed Pearson
-     r(feature, failure), candidates ranked by |r|, ORIGINAL SIGN RETAINED and used in the score (features are oriented
-     so that higher = more failure-like; with the paper's expected signs this equals PKS - beta*ECS up to a constant).
-     SENSITIVITY: the authors' AUROC ranking with the paper's fixed signs (columns *_aucrank). See DEVIATIONS.md.
-  3. ecs_sum = sum of top-K_h ECS, pks_sum = sum of top-K_l PKS; min-max both with TRAINING-token min/max.
-  4. token score H_t = pks_oriented_norm + beta * ecs_oriented_norm   (m = alpha = 1; see step 2)
-  5. response score = mean_t H_t   (authors' "Grouped means"; the final min-max does not change ranks).
-Hyperparameters K_h in 1..n_heads, K_l in 1..L, beta in {0.1..2.0} are chosen by inner 3-fold grouped CV
-(row-level AUROC) on the outer-training part only; tau = F1-optimal threshold on the inner out-of-fold scores.
-
-Columns written:
-  s_redeep_c1  original: training rows restricted to C1_gold
-  s_redeep     ours: all training rows pooled, condition never used
-  s_ecs, s_pks ablations (pooled): oriented ECS only / oriented PKS only (Table 6 of the paper)
-  s_redeep_c1_aucrank, s_redeep_aucrank   same two fits with the authors' AUROC ranking (sensitivity)
-  x_redeep_trC2                           E7 cross-noise: fit on C2 rows only
-  s_redeep_o1  published Llama-2-7B token hyperparameters as-is (heads [[25,0]], 10 layers, beta 0.2,
-               authors' normalisation constants) — sanity check only, no fitting.
-
-Usage:
-  python -m src.detect.fit_redeep --feats .../redeep_feats.parquet --meta .../redeep_meta.json \
-      --labels .../labeled_std.jsonl --folds artifacts/data/folds_v2.json --scores .../scores.parquet
-"""
 import argparse, json, os
 import numpy as np
 import pandas as pd

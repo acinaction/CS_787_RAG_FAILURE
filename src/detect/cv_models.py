@@ -1,6 +1,3 @@
-"""Nested grouped-CV wrapper for sklearn classifiers (LR / MLP / probes).
-Outer: the frozen 5 folds. Inner: 3-fold grouped CV on the outer-training part chooses the
-hyperparameter (and, for probes, the layer); tau = F1-optimal threshold on inner out-of-fold scores."""
 import warnings
 import numpy as np
 from sklearn.exceptions import ConvergenceWarning
